@@ -1,0 +1,33 @@
+Package Body :
+
+-The package body has the codes for various methods declared in the package specification 
+ and other private declarations, which are hidden from the code outside the package.
+
+-The CREATE PACKAGE BODY Statement is used for creating the package body.
+
+-------------------------------------------------------------
+example 1:
+
+create or replace package b1 as
+procedure salary(e in emp.empno%type,sa out emp.sal%type);
+end b1;
+--Package Body
+create or replace package body b1 as
+procedure salary(e in emp.empno%type,sa out emp.sal%type)as
+begin
+select sal into sa from emp where empno=e;
+end salary;
+end b1;
+-------------------------------------------------------------
+example 2:
+
+create or replace package jahnavi as
+procedure department(d_id in dept.deptno%type,d_name out dept.dname%type,lo out dept.loc%type);
+end jahnavi;
+--Package Body
+create or replace package body jahnavi as
+procedure department(d_id in dept.deptno%type,d_name out dept.dname%type,lo out dept.loc%type)as
+begin 
+select dname,loc into d_name,lo from dept where deptno=d_id;
+end department;
+end jahnavi;
