@@ -1,0 +1,19 @@
+Package Specification :
+
+-The specification is the interface to the package. 
+-It just DECLARES the types, variables, constants, exceptions, cursors, and subprograms that can be referenced from outside the package.
+-In other words, it contains all information about the content of the package, but excludes the code for the subprograms.
+-All objects placed in the specification are called public objects.
+-Any subprogram not in the package specification but coded in the package body is called a private object.
+
+example 1:
+
+create or replace package b1 as
+procedure salary(e in emp.empno%type,sa out emp.sal%type);
+end b1;
+
+example 2:
+
+create or replace package jahnavib1 as
+procedure updating(e in emp.empno%type,updatedsal out emp.sal%type);
+end jahnavib1;
