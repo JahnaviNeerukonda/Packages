@@ -1,0 +1,12 @@
+DROP PACKAGE :
+  The DROP PACKAGE statement drops a stored package from the database.
+  This statement drops the body and specification of a package.
+  
+ -To drop a package, you use the DROP PACKAGE statement with the following syntax:
+           DROP PACKAGE [BODY] schema_name.package_name;
+           
+  
+-If you want to drop only the body of the package, you need to specify the BODY keyword.
+ If you omit the BODY keyword, then the statement drops both the body and specification of the package.
+ 
+ ex: DROP PACKAGE BODY b1;
