@@ -1,0 +1,17 @@
+Introduction to the PL/SQL package – introduce you to PL/SQL packages and explain to you the advantages of using them in your application development.
+
+PL/SQL package is an object of the schema of oracle database which can contain the definitions and descriptions of a group of functionalities that are related to one 
+another. A package in Pl/SQL usually consists of functions, procedures, subprograms, cursors, variables, cursors, and even exceptions. 
+The PL/ SQL compiles the package and stores it inside the oracle database for further usage.
+
+A package will have two mandatory parts −
+
+   1) Package specification
+   2) Package body or definition
+   
+Package Specification-
+The specification is the interface to the package. It just DECLARES the types, variables, constants, exceptions, cursors, and subprograms that can be referenced from outside the package. In other words, it contains all information about the content of the package, but excludes the code for the subprograms.All objects placed in the specification are called public objects.
+Any subprogram not in the package specification but coded in the package body is called a private object.
+
+Package Body-
+The package body has the codes for various methods declared in the package specification and other private declarations, which are hidden from the code outside the package.
